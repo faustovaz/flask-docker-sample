@@ -1,0 +1,9 @@
+version: '2'
+services:
+  flask-app:
+    build: .
+    ports:
+      - 5000:5000
+    volumes:
+      - /home/faustovaz/projects/docker/flaskapp/app:/home/fausto/flask-app
+    image: "flask-app:v1.0"
