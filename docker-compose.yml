@@ -5,7 +5,7 @@ services:
     ports:
       - 5000:5000
     volumes:
-      - /home/faustovaz/projects/docker/flask-docker-sample/app:/home/fausto/flask-app
-    image: "flask-app:v1.0"
+      - ./app:/var/flask-app
+    image: "flask-app"
     environment:
       - DEBUG=1

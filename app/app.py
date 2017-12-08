@@ -9,7 +9,7 @@ def index():
 
 @app.route("/me")
 def me():
-    return "Flask-docker-app";
+    return "Flask-docker-app...";
 
 if __name__ == '__main__':
     if os.getenv("DEBUG") and os.getenv("DEBUG") == "1":
